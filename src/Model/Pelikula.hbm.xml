@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10-dic-2018 21:29:27 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Pelikula" table="pelikula" catalog="ormpelikula" optimistic-lock="version">
+        <id name="izena" type="string">
+            <column name="izena" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="direktorea" type="string">
+            <column name="direktorea" length="65535" />
+        </property>
+        <property name="urtea" type="java.lang.Integer">
+            <column name="urtea" />
+        </property>
+        <property name="generoa" type="string">
+            <column name="generoa" length="65535" />
+        </property>
+        <property name="ikusita" type="string">
+            <column name="ikusita" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>
